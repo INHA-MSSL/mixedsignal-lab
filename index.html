@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advanced Mixed-Signal Integrated Circuit Lab. | Inha University</title>
+  <!-- styles.css는 모든 페이지의 디자인, menu.js는 드롭다운 닫기 동작을 담당합니다. -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="menu.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- 공통 상단 메뉴. 메뉴를 바꿀 때는 각 HTML의 이 부분을 함께 수정하세요. -->
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">AMSIC Lab.</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link is-active" aria-current="page">Home</a>
+        <a href="research.html" class="nav-link">Research</a>
+          <!-- 메뉴 이름의 href는 기본 페이지, details 안의 링크는 화살표를 눌렀을 때 나오는 목록입니다. -->
+          <div class="nav-group">
+            <a href="professor.html" class="nav-link">Members</a>
+            <details>
+              <summary aria-label="Members submenu"></summary>
+              <div class="dropdown">
+              <a href="professor.html">Professor</a>
+              <a href="students.html">Students</a>
+              <a href="alumni.html">Alumni</a>
+              </div>
+            </details>
+          </div>
+          <div class="nav-group">
+            <a href="papers.html" class="nav-link">Publications</a>
+            <details>
+              <summary aria-label="Publications submenu"></summary>
+              <div class="dropdown">
+              <a href="papers.html">Papers</a>
+              <a href="patents.html">Patents</a>
+              </div>
+            </details>
+          </div>
+          <div class="nav-group">
+            <a href="team-gallery.html" class="nav-link">Gallery</a>
+            <details>
+              <summary aria-label="Gallery submenu"></summary>
+              <div class="dropdown">
+              <a href="team-gallery.html">Team Gallery</a>
+              <a href="chip-gallery.html">Chip Gallery</a>
+              </div>
+            </details>
+          </div>
+        <a class="nav-link" href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 홈 첫 화면. h1은 연구실 이름, br은 줄바꿈, 아래 p는 한 줄 소개입니다. -->
+    <section class="hero" aria-labelledby="lab-title">
+      <div class="container">
+        <p class="affiliation">Inha University</p>
+        <h1 id="lab-title">Advanced Mixed-Signal<br>Integrated Circuit Lab.</h1>
+        <p class="intro">Mixed-signal integrated circuits for power management and energy harvesting.</p>
+      </div>
+    </section>
+
+    <section class="container section" aria-labelledby="news-title">
+      <div class="section-heading"><h2 id="news-title">News</h2></div>
+      <!-- 실제 소식으로 바꿀 때 아래 li의 Example을 날짜로 바꾸고,
+           strong 대신 <a href="https://doi.org/실제DOI">실제 논문 제목</a>을 넣으세요.
+           새 소식을 추가하려면 li를 복사해서 목록 위쪽에 붙여 넣으세요. -->
+      <ul class="news">
+        <li><span>Example</span> <strong>New paper accepted at [Journal or Conference]</strong></li>
+      </ul>
+    </section>
+
+    <!-- 홈의 연구 요약 카드. href의 # 뒤 이름은 research.html 안의 해당 연구 주제 id와 일치해야 합니다. -->
+    <section class="container section" aria-labelledby="research-title">
+      <div class="section-heading">
+        <h2 id="research-title">Research</h2>
+        <a href="research.html">Explore our research <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="topics">
+        <a class="topic" href="research.html#energy-harvesting">
+          <h3>Energy Harvesting</h3>
+          <p>Extracting usable energy from piezoelectric transducers.</p>
+        </a>
+        <a class="topic" href="research.html#dc-dc">
+          <h3>DC–DC Converters</h3>
+          <p>Efficient switching regulators for power conversion.</p>
+        </a>
+        <a class="topic" href="research.html#ldo">
+          <h3>Low-Dropout Regulators</h3>
+          <p>Stable supply rails with low quiescent current.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- 연락처를 수정할 때 mailto: 뒤 주소와 화면에 보이는 주소를 함께 바꾸세요. -->
+    <section id="contact" class="container section" aria-labelledby="contact-title">
+      <div class="contact-panel">
+        <h2 id="contact-title">Contact</h2>
+        <p>Interested in joining us as an undergraduate researcher, M.S. student, or Ph.D. student? Please get in touch.</p>
+        <a href="mailto:ihpark@inha.ac.kr">ihpark@inha.ac.kr</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">Advanced Mixed-Signal Integrated Circuit Lab. · Inha University</div>
+  </footer>
+</body>
+</html>

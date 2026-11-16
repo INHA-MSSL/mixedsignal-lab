@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Papers | AMSIC Lab.</title>
+  <!-- styles.css는 모든 페이지의 디자인, menu.js는 드롭다운 닫기 동작을 담당합니다. -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="menu.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- 공통 상단 메뉴. 메뉴를 바꿀 때는 각 HTML의 이 부분을 함께 수정하세요. -->
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">AMSIC Lab.</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="research.html" class="nav-link">Research</a>
+          <!-- 메뉴 이름의 href는 기본 페이지, details 안의 링크는 화살표를 눌렀을 때 나오는 목록입니다. -->
+          <div class="nav-group">
+            <a href="professor.html" class="nav-link">Members</a>
+            <details>
+              <summary aria-label="Members submenu"></summary>
+              <div class="dropdown">
+              <a href="professor.html">Professor</a>
+              <a href="students.html">Students</a>
+              <a href="alumni.html">Alumni</a>
+              </div>
+            </details>
+          </div>
+          <div class="nav-group">
+            <a href="papers.html" class="nav-link is-active" aria-current="page">Publications</a>
+            <details>
+              <summary aria-label="Publications submenu"></summary>
+              <div class="dropdown">
+              <a href="papers.html" aria-current="page">Papers</a>
+              <a href="patents.html">Patents</a>
+              </div>
+            </details>
+          </div>
+          <div class="nav-group">
+            <a href="team-gallery.html" class="nav-link">Gallery</a>
+            <details>
+              <summary aria-label="Gallery submenu"></summary>
+              <div class="dropdown">
+              <a href="team-gallery.html">Team Gallery</a>
+              <a href="chip-gallery.html">Chip Gallery</a>
+              </div>
+            </details>
+          </div>
+        <a class="nav-link" href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="banner">
+      <h1 class="container">Papers</h1>
+    </div>
+    <div class="container reading page-content">
+      <!-- 본문 상단의 하위 페이지 버튼. aria-current="page"는 지금 보고 있는 페이지를 표시합니다. -->
+      <nav class="subnav" aria-label="Publications pages">
+        <a href="papers.html" aria-current="page">Papers</a>
+        <a href="patents.html">Patents</a>
+      </nav>
+      <!-- 논문 제목, 저자, 학술지 또는 학회명, 연도, DOI 링크를 추가하세요. -->
+      <!-- 저널 논문은 journals 안에, 학회 논문은 conferences 안에 넣으세요. -->
+      <section class="entry" id="journals">
+        <h2>Journal Papers</h2>
+        <p>Journal publications will appear here.</p>
+      </section>
+      <section class="entry" id="conferences">
+        <h2>Conference Papers</h2>
+        <p>Conference publications will appear here.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">Advanced Mixed-Signal Integrated Circuit Lab. · Inha University</div>
+  </footer>
+</body>
+</html>

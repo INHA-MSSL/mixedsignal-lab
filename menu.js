@@ -19,3 +19,15 @@ navigation.addEventListener("keydown", (event) => {
 });
 
 
+// 스크롤 위치에 따라 상단 메뉴의 그림자를 켜고 끕니다.
+const header = document.querySelector(".header");
+
+function updateHeaderShadow() {
+  header.classList.toggle("is-scrolled", window.scrollY > 10);
+}
+
+window.addEventListener("scroll", updateHeaderShadow, { passive: true });
+
+// 처음 열거나 이전 스크롤 위치가 복원됐을 때도 반영합니다.
+window.addEventListener("pageshow", updateHeaderShadow);
+updateHeaderShadow();

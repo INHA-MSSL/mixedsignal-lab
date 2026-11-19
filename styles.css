@@ -112,7 +112,7 @@ h3 { font-size: 1.125rem; }
 .news li:first-child { border-top: 1px solid var(--line); }
 .news li > span { display: inline-block; min-width: 84px; color: var(--muted); font-size: .86rem; }
 .news a:hover { color: var(--navy); }
-.topics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.topics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
 .topic { display: block; padding: 22px; border: 1px solid var(--line); border-radius: 8px; text-decoration: none; transition: background-color 160ms ease, transform 160ms ease; }
 .topic:hover { transform: translateY(-2px); background: var(--tint); }
 .topic p, .copy { margin-top: 9px; color: var(--muted); }

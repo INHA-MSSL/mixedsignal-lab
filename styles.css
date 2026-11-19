@@ -10,6 +10,9 @@
   --width: 1120px;
 }
 
+/* 스크롤바 유무에 따라 로고와 메뉴가 움직이지 않도록 자리를 확보합니다. */
+html { scrollbar-gutter: stable; }
+
 * { box-sizing: border-box; }
 body {
   margin: 0;
@@ -47,7 +50,8 @@ h3 { font-size: 1.125rem; }
   transition: background-size 160ms ease;
 }
 .nav-link:hover, .nav-link.is-active { background-size: 100% 2px; }
-.nav-link.is-active { color: var(--navy); font-weight: 700; }
+/* 선택 메뉴의 글자 폭을 유지하고 밑줄로 현재 위치를 표시합니다. */
+.nav-link.is-active { color: var(--navy); font-weight: 400; }
 .nav summary {
   display: grid;
   place-items: center;

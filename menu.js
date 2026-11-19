@@ -19,23 +19,3 @@ navigation.addEventListener("keydown", (event) => {
 });
 
 
-// F5 또는 새로고침 버튼으로 페이지를 다시 열었는지 확인합니다.
-const pageNavigation = performance.getEntriesByType("navigation")[0];
-
-if (pageNavigation?.type === "reload") {
-  // 브라우저가 이전 스크롤 위치로 돌아가는 것을 막습니다.
-  history.scrollRestoration = "manual";
-
-  // 페이지가 로드되면 맨 위로 이동합니다.
-  window.addEventListener("pageshow", () => {
-    requestAnimationFrame(() => {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "instant"
-      });
-    });
-  });
-}
-
-// 이 아래부터 기존 메뉴 코드가 이어집니다.

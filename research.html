@@ -58,44 +58,124 @@
     <div class="banner">
       <h1 class="container">Research</h1>
     </div>
+  
     <div class="container reading page-content">
       <h2>Integrated Power Management Circuits and Systems</h2>
-      <p>We develop integrated power management circuits for mobile devices, AI computing platforms, and energy-autonomous sensor systems.</p>
-      <!-- 상세 연구 주제 하나가 article 하나입니다. 주제를 더 넣으려면 article을 복사하고 id도 새 이름으로 바꾸세요. -->
+      <p>
+        We design efficient, compact power management circuits
+        for mobile devices, AI computing platforms, and autonomous sensors.
+      </p>
+  
       <div class="research-list">
-      <article class="entry" id="energy-harvesting">
-        <h2>Energy Harvesting</h2>
-        <p>Power interfaces for piezoelectric energy harvesting and energy-autonomous sensor systems.</p>
-        <figure class="media-slot">
-          <span>Piezoelectric energy harvesting circuit diagram</span>
-          <!-- 실제 그림을 넣을 때 위 span을 지우고 아래 두 줄의 주석을 푸세요.
-          <img src="energy-harvesting.jpg" alt="Piezoelectric energy harvesting circuit diagram" loading="lazy">
-          <figcaption>Figure caption.</figcaption>
-          -->
-        </figure>
-      </article>
-      <article class="entry" id="dc-dc">
-        <h2>DC–DC Converters</h2>
-        <p>Integrated switching converters for mobile and edge-AI devices, with a focus on conversion efficiency and load transient response.</p>
-        <figure class="media-slot">
-          <span>DC–DC converter architecture</span>
-          <!-- 실제 그림을 넣을 때 위 span을 지우고 아래 두 줄의 주석을 푸세요.
-          <img src="dc-dc.jpg" alt="DC–DC converter architecture" loading="lazy">
-          <figcaption>Figure caption.</figcaption>
-          -->
-        </figure>
-      </article>
-      <article class="entry" id="ldo">
-        <h2>Low-Dropout Regulators</h2>
-        <p>Integrated linear regulators designed for stable supply rails and low quiescent current.</p>
-        <figure class="media-slot">
-          <span>LDO block diagram</span>
-          <!-- 실제 그림을 넣을 때 위 span을 지우고 아래 두 줄의 주석을 푸세요.
-          <img src="ldo.jpg" alt="LDO block diagram" loading="lazy">
-          <figcaption>Figure caption.</figcaption>
-          -->
-        </figure>
-      </article>
+  
+        <!-- 첫 번째 연구 분야. Home 카드의 #mobile-pmics와 연결됩니다. -->
+        <article class="entry" id="mobile-pmics">
+          <h2>Battery-Powered PMICs for Mobile and Edge-AI Devices</h2>
+          <p>
+            Our research targets compact power conversion for
+            battery-powered devices, combining high efficiency
+            with fast response across operating conditions.
+          </p>
+  
+          <ul>
+            <li>Integrated DC–DC converters</li>
+            <li>Fully integrated switched-capacitor converters</li>
+            <li>Fast load-transient response and wide voltage operation</li>
+          </ul>
+  
+          <figure class="media-slot">
+            <span>Mobile and Edge-AI PMIC figure</span>
+  
+            <!-- 실제 그림을 넣으면 위 span을 지우고 아래 주석을 푸세요.
+            <img src="mobile-pmics.jpg"
+                 alt="Power management circuits for mobile and Edge-AI devices"
+                 loading="lazy">
+            <figcaption>Figure caption.</figcaption>
+            -->
+          </figure>
+        </article>
+  
+        <!-- 두 번째 연구 분야 -->
+        <article class="entry" id="ai-hpc">
+          <h2>High-Voltage PMICs for AI and HPC Systems</h2>
+          <p>
+            We explore high-voltage, high-current converters
+            for efficient power delivery to AI accelerators
+            and high-performance computing systems.
+          </p>
+  
+          <ul>
+            <li>Hybrid converters for 12–60 V inputs</li>
+            <li>High-step-down conversion to sub-1 V supplies</li>
+            <li>High-current delivery and chiplet point-of-load integration</li>
+          </ul>
+  
+          <figure class="media-slot">
+            <span>AI and HPC power delivery figure</span>
+  
+            <!-- 실제 그림을 넣으면 위 span을 지우고 아래 주석을 푸세요.
+            <img src="ai-hpc.jpg"
+                 alt="Power delivery architecture for AI and HPC systems"
+                 loading="lazy">
+            <figcaption>Figure caption.</figcaption>
+            -->
+          </figure>
+        </article>
+  
+        <!-- 세 번째 연구 분야 -->
+        <article class="entry" id="energy-harvesting">
+          <h2>Energy-Harvesting Systems and Ultra-Low-Power Sensor Nodes</h2>
+          <p>
+            We develop harvesting interfaces and low-power circuits
+            that support autonomous sensing with limited
+            or intermittent energy.
+          </p>
+  
+          <ul>
+            <li>Thermoelectric, photovoltaic, triboelectric, and piezoelectric harvesting</li>
+            <li>Maximum power point tracking and energy combining</li>
+            <li>Ultra-low-power sensor nodes for low-earth-orbit satellites</li>
+          </ul>
+  
+          <figure class="media-slot">
+            <span>Energy harvesting and autonomous sensor figure</span>
+  
+            <!-- 실제 그림을 넣으면 위 span을 지우고 아래 주석을 푸세요.
+            <img src="energy-harvesting.jpg"
+                 alt="Multi-source energy harvesting and autonomous sensor system"
+                 loading="lazy">
+            <figcaption>Figure caption.</figcaption>
+            -->
+          </figure>
+        </article>
+  
+        <!-- 네 번째 연구 분야 -->
+        <article class="entry" id="integrated-regulators">
+          <h2>Fully Integrated Voltage Regulators for Processors</h2>
+          <p>
+            Our integrated regulators enable compact on-chip
+            power delivery with fast transient response,
+            stable operation, and reduced external capacitance.
+          </p>
+  
+          <ul>
+            <li>Capacitorless LDOs</li>
+            <li>Hybrid regulator architectures</li>
+            <li>Stability, power-supply rejection, and low-voltage operation</li>
+          </ul>
+  
+          <figure class="media-slot">
+            <span>Fully integrated voltage regulator figure</span>
+  
+            <!-- 실제 그림을 넣으면 위 span을 지우고 아래 주석을 푸세요.
+            <img src="integrated-regulators.jpg"
+                 alt="Fully integrated voltage regulator architecture"
+                 loading="lazy">
+            <figcaption>Figure caption.</figcaption>
+            -->
+          </figure>
+        </article>
+  
       </div>
     </div>
   </main>

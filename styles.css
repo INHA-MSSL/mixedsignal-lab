@@ -153,3 +153,15 @@ footer { padding-block: 20px; border-top: 1px solid var(--line); color: var(--mu
 body {
   overflow-anchor: none;
 }
+
+/* 카드에서 이동한 연구 제목이 고정 메뉴 아래에 보이도록 설정 */
+.research-list .entry {
+  scroll-margin-top: 90px;
+}
+
+/* 모바일에서는 상단 메뉴가 높아지는 점을 반영 */
+@media (max-width: 720px) {
+  .research-list .entry {
+    scroll-margin-top: 150px;
+  }
+}

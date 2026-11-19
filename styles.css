@@ -36,7 +36,7 @@ h3 { font-size: 1.125rem; }
 .skip-link:focus { transform: none; }
 
 /* 상단 메뉴. is-active는 현재 메뉴에 밑줄을 표시합니다. */
-.header { position: sticky; top: 0; z-index: 100; border-bottom: 1px solid var(--line); background: white; }
+.header { position: sticky; top: 0; z-index: 100; border-bottom: 1px solid var(--line); background: white; overflow-anchor: none; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 68px; gap: 8px 24px; }
 .brand { color: var(--navy); font-weight: 750; letter-spacing: -.03em; text-decoration: none; white-space: nowrap; }
 .nav { display: flex; flex-wrap: wrap; align-items: center; gap: 0 18px; font-size: .875rem; }

@@ -92,7 +92,7 @@ h3 { font-size: 1.125rem; }
 .intro { max-width: 560px; margin: 20px auto 0; color: var(--muted); }
 .banner { padding: clamp(53px, 7vw, 91px) 0; background: var(--banner); color: white; }
 .banner h1 { font-size: clamp(2.6rem, 6vw, 4.25rem); letter-spacing: -.045em; }
-.banner h1, .hero .container { animation: enter 260ms ease-out; }
+.banner h1, .hero .container { animation: enter 800ms ease-out; }
 /* 제목과 드롭다운이 나타나는 효과. 위 animation 속성의 ms 값을 바꾸면 길이가 달라집니다. */
 @keyframes enter {
   from { opacity: .45; transform: translateY(5px); }

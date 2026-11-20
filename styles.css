@@ -236,9 +236,4 @@ body { overflow-anchor: none; }
   .students-content .student-photo { width: 128px; }
 }
 
-
-
-
-/* 과정 이름은 화면에서 숨기고, 과정 내용만 표시 */
-.students-content .student-details dt.student-course { display: none; }
 .students-content .student-details dd.student-course { color: var(--navy); font-weight: 700; }

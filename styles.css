@@ -247,3 +247,11 @@ body { overflow-anchor: none; }
 }
 
 .students-content .student-details dd.student-course { color: var(--navy); font-weight: 700; }
+
+
+/* Home 뉴스·Contact 링크: 평소에는 밑줄 숨김 */
+.news a, .contact-panel a { text-decoration: none; }
+
+/* 마우스를 올리거나 키보드로 선택하면 밑줄 표시 */
+.news a:hover, .news a:focus-visible,
+.contact-panel a:hover, .contact-panel a:focus-visible { text-decoration: underline; text-underline-offset: 4px; }

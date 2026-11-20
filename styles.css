@@ -132,7 +132,7 @@ h3 { font-size: 1.125rem; }
 .entry h2 { font-size: clamp(1.28rem, 2.5vw, 1.65rem); }
 .entry p { margin-top: 9px; color: var(--muted); }
 .research-list { margin-top: 30px; }
-.media-slot { display: grid; place-items: center; min-height: 155px; margin-top: 16px; padding: 20px; border: 1px dashed #b7c6d6; border-radius: 7px; color: var(--muted); background: var(--tint); text-align: center; }
+.media-slot { margin: 16px 0 0; padding: 0; border: none; background: transparent; }
 .media-slot img { display: block; width: 100%; height: auto; }
 .media-slot figcaption { margin-top: 8px; }
 footer { padding-block: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: .84rem; }

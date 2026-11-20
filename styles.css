@@ -249,12 +249,16 @@ body { overflow-anchor: none; }
 .students-content .student-details dd.student-course { color: var(--navy); font-weight: 700; }
 
 
-/* Home 뉴스·Contact 링크: 평소에는 밑줄 숨김 */
-.news a, .contact-panel a { text-decoration: none; }
+/* 뉴스와 Contact 이메일만 평소 밑줄 숨김 */
+.news a, .contact-panel a[href^="mailto:"] { text-decoration: none; }
 
-/* 마우스를 올리거나 키보드로 선택하면 밑줄 표시 */
+/* 마우스 또는 키보드로 선택하면 밑줄 표시 */
 .news a:hover, .news a:focus-visible,
-.contact-panel a:hover, .contact-panel a:focus-visible { text-decoration: underline; text-underline-offset: 4px; }
+.contact-panel a[href^="mailto:"]:hover, .contact-panel a[href^="mailto:"]:focus-visible { text-decoration: underline; }
+
+/* 페이지 이동 화살표 링크는 항상 밑줄 표시 */
+.section-heading a, .contact-panel a:not([href^="mailto:"]) { text-decoration: underline; }
+
 
 /* Alumni: Professor·Students와 본문 너비 및 버튼 위쪽 여백 통일 */
 .alumni-content { padding-block: 40px 72px; }

@@ -42,49 +42,16 @@ h3 { font-size: 1.125rem; }
 .brand { color: var(--navy); font-weight: 750; letter-spacing: -.03em; text-decoration: none; white-space: nowrap; }
 .nav { display: flex; flex-wrap: wrap; align-items: center; gap: 0 18px; font-size: .875rem; }
 .nav-group { display: flex; align-items: center; position: relative; }
-.nav-link {
-  display: inline-flex;
-  align-items: center;
-  min-height: 42px;
-  text-decoration: none;
-  background: linear-gradient(var(--navy), var(--navy)) left bottom / 0 2px no-repeat;
-  transition: background-size 160ms ease;
-}
+.nav-link { display: inline-flex; align-items: center; min-height: 42px; text-decoration: none; background: linear-gradient(var(--navy), var(--navy)) left bottom / 0 2px no-repeat; transition: background-size 160ms ease; }
 .nav-link:hover, .nav-link.is-active { background-size: 100% 2px; }
 /* 선택 메뉴의 글자 폭을 유지하고 밑줄로 현재 위치를 표시합니다. */
 .nav-link.is-active { color: var(--navy); font-weight: 400; }
-.nav summary {
-  display: grid;
-  place-items: center;
-  min-width: 32px;
-  min-height: 42px;
-  border-radius: 4px;
-  list-style: none;
-  cursor: pointer;
-}
+.nav summary { display: grid; place-items: center; min-width: 32px; min-height: 42px; border-radius: 4px; list-style: none; cursor: pointer; }
 .nav summary::-webkit-details-marker { display: none; }
 .nav summary:hover, .nav details[open] summary { background-color: var(--tint); }
-.nav summary::after {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border: solid currentColor;
-  border-width: 0 1px 1px 0;
-  transform: translateY(-2px) rotate(45deg);
-  transition: transform 160ms ease;
-}
+.nav summary::after { content: ""; width: 6px; height: 6px; border: solid currentColor; border-width: 0 1px 1px 0; transform: translateY(-2px) rotate(45deg); transition: transform 160ms ease; }
 .nav details[open] summary::after { transform: translateY(1px) rotate(225deg); }
-.dropdown {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  min-width: 148px;
-  padding: 5px;
-  border: 1px solid var(--line);
-  border-radius: 7px;
-  background: white;
-  box-shadow: 0 8px 24px #10345a15;
-}
+.dropdown { position: absolute; top: 100%; right: 0; min-width: 148px; padding: 5px; border: 1px solid var(--line); border-radius: 7px; background: white; box-shadow: 0 8px 24px #10345a15; }
 .nav details[open] .dropdown { animation: enter 160ms ease-out; }
 .dropdown a { display: block; padding: 8px 10px; border-radius: 4px; text-decoration: none; white-space: nowrap; }
 .dropdown a:hover, .dropdown a[aria-current="page"] { background: var(--tint); color: var(--navy); }
@@ -151,14 +118,10 @@ footer { padding-block: 20px; border-top: 1px solid var(--line); color: var(--mu
 }
 
 /* 새로고침할 때 화면이 조금씩 밀리는 현상 방지 */
-body {
-  overflow-anchor: none;
-}
+body { overflow-anchor: none; }
 
 /* 카드에서 이동한 연구 제목이 고정 메뉴 아래에 보이도록 설정 */
-.research-list .entry {
-  scroll-margin-top: 90px;
-}
+.research-list .entry { scroll-margin-top: 90px; }
 
 /* 모바일에서는 상단 메뉴가 높아지는 점을 반영 */
 @media (max-width: 720px) {
@@ -170,148 +133,45 @@ body {
 /* ===== 교수님 페이지 ===== */
 
 /* 본문 너비와 상하 여백 */
-.professor-content {
-  max-width: 1040px;
-  padding-block: 40px 64px;
-}
+.professor-content { max-width: 1040px; padding-block: 40px 64px; }
 
 /* 사진 왼쪽, 기본 정보 오른쪽 */
-.professor-profile {
-  display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
-  align-items: center;
-  gap: 48px;
-  padding-block: 12px 48px;
-}
+.professor-profile { display: grid; grid-template-columns: 220px minmax(0, 1fr); align-items: center; gap: 48px; padding-block: 12px 48px; }
 
 /* 사진은 원본 비율을 유지 */
-.professor-photo {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-}
+.professor-photo { display: block; width: 100%; height: auto; border-radius: 4px; }
 
 /* 성함 */
-.professor-info h2 {
-  margin: 0 0 18px;
-  color: var(--navy);
-  font-size: clamp(1.8rem, 3.5vw, 2.7rem);
-  letter-spacing: -0.04em;
-}
+.professor-info h2 { margin: 0 0 18px; color: var(--navy); font-size: clamp(1.8rem, 3.5vw, 2.7rem); letter-spacing: -0.04em; }
 
 /* 직위 */
-.professor-position {
-  margin-bottom: 8px;
-  font-size: 1.12rem;
-  font-weight: 600;
-}
+.professor-position { margin-bottom: 8px; font-size: 1.12rem; font-weight: 600; }
 
-.professor-info > p {
-  line-height: 1.8;
-}
+.professor-info > p { line-height: 1.8; }
 
 /* 이메일과 전화번호 */
-.professor-contact {
-  display: grid;
-  gap: 8px;
-  margin: 22px 0 0;
-}
-
-.professor-contact > div {
-  display: grid;
-  grid-template-columns: 52px minmax(0, 1fr);
-  gap: 12px;
-}
-
-.professor-contact dt {
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-.professor-contact dd {
-  margin: 0;
-  overflow-wrap: anywhere;
-}
-
-.professor-contact a {
-  text-decoration: none;
-}
-
-.professor-contact a:hover {
-  text-decoration: underline;
-}
+.professor-contact { display: grid; gap: 8px; margin: 22px 0 0; }
+.professor-contact > div { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 12px; }
+.professor-contact dt { color: var(--muted); font-size: 0.9rem; }
+.professor-contact dd { margin: 0; overflow-wrap: anywhere; }
+.professor-contact a { text-decoration: none; }
+.professor-contact a:hover { text-decoration: underline; }
 
 /* 학력·경력·수상 영역 */
-/* 왼쪽은 영역 제목, 오른쪽은 항목 목록 */
-.professor-section {
-  display: grid;
-  grid-template-columns: 190px minmax(0, 1fr);
-  gap: 28px;
-  padding-block: 36px;
-  border-top: 1px solid var(--line);
-}
-
-.professor-section > h2 {
-  font-size: 1.5rem;
-  line-height: 1.3;
-  letter-spacing: -0.03em;
-}
-
-/* 학력과 경력 항목 사이 간격 */
-.professor-entries {
-  display: grid;
-  gap: 26px;
-}
-
-/* 날짜와 상세 내용을 두 열로 정렬 */
-.professor-record {
-  display: grid;
-  grid-template-columns: 160px minmax(0, 1fr);
-  align-items: start;
-  gap: 20px;
-}
-
-.professor-section .record-date {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.88rem;
-  line-height: 1.7;
-}
+.professor-section { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 28px; padding-block: 36px; border-top: 1px solid var(--line); }
+.professor-section > h2 { font-size: 1.5rem; line-height: 1.3; letter-spacing: -0.03em; }
+.professor-entries { display: grid; gap: 26px; }
+.professor-record { display: grid; grid-template-columns: 160px minmax(0, 1fr); align-items: start; gap: 20px; }
+.professor-section .record-date { margin: 0; color: var(--muted); font-size: 0.88rem; line-height: 1.7; }
 
 /* 학위명과 직위 */
-.record-detail h3 {
-  margin: 0 0 7px;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.5;
-}
-
-.record-detail p {
-  margin: 0;
-}
-
-.record-detail .record-note {
-  margin-top: 5px;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
+.record-detail h3 { margin: 0 0 7px; font-size: 1rem; font-weight: 700; line-height: 1.5; }
+.record-detail p { margin: 0; }
+.record-detail .record-note { margin-top: 5px; color: var(--muted); font-size: 0.9rem; }
 
 /* 수상 내역 */
-.professor-awards {
-  display: grid;
-  gap: 18px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.professor-awards li {
-  display: grid;
-  grid-template-columns: 160px minmax(0, 1fr);
-  align-items: start;
-  gap: 20px;
-}
+.professor-awards { display: grid; gap: 18px; margin: 0; padding: 0; list-style: none; }
+.professor-awards li { display: grid; grid-template-columns: 160px minmax(0, 1fr); align-items: start; gap: 20px; }
 
 /* 태블릿에서는 영역 제목을 목록 위로 이동 */
 @media (max-width: 900px) {
@@ -329,17 +189,9 @@ body {
     padding-bottom: 32px;
   }
 
-  .professor-photo {
-    max-width: 200px;
-  }
+  .professor-photo { max-width: 200px; }
 
   .professor-record,
-  .professor-awards li {
-    grid-template-columns: 1fr;
-    gap: 6px;
-  }
-
-  .professor-section {
-    padding-block: 28px;
-  }
+  .professor-awards li { grid-template-columns: 1fr; gap: 6px; }
+  .professor-section { padding-block: 28px; } 
 }

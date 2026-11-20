@@ -208,8 +208,11 @@ body { overflow-anchor: none; }
 /* 학생 카드 */
 .students-content .student-card { display: grid; grid-template-columns: 128px minmax(0, 1fr); align-items: start; gap: 24px; margin: 0; padding: 24px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
 
-/* 사진 */
-.students-content .student-photo { display: block; width: 100%; max-width: none; height: auto; aspect-ratio: 3 / 4; margin: 0; object-fit: contain; background: var(--tint); border-radius: 4px; }
+/* 사진을 3:4 틀에 꽉 채우고, 넘치는 가장자리는 자동으로 자릅니다. */
+.students-content .student-photo { display: block; width: 100%; max-width: none; height: auto; aspect-ratio: 3 / 4; margin: 0; object-fit: cover; object-position: center; background: transparent; border-radius: 4px; }
+/* 확대된 사진이 틀 밖으로 나오지 않도록 처리 */
+.students-content .student-photo-frame { aspect-ratio: 3 / 4; overflow: hidden; border-radius: 4px; }
+.students-content .student-photo-frame .student-photo { height: 100%; border-radius: 0; transform: scale(1.08); }
 
 /* 이름과 학생 정보 */
 .students-content .student-info { min-width: 0; text-align: left; }
@@ -234,6 +237,13 @@ body { overflow-anchor: none; }
 @media (max-width: 480px) {
   .students-content .student-card { grid-template-columns: minmax(0, 1fr); gap: 20px; padding: 22px; }
   .students-content .student-photo { width: 128px; }
+}
+
+/* 작은 모바일: 사진 아래에 정보 배치 */
+@media (max-width: 480px) {
+  .students-content .student-card { grid-template-columns: minmax(0, 1fr); gap: 20px; padding: 22px; }
+  .students-content .student-photo { width: 128px; }
+  .students-content .student-photo-frame { width: 128px; }
 }
 
 .students-content .student-details dd.student-course { color: var(--navy); font-weight: 700; }

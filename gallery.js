@@ -73,20 +73,17 @@
     viewer.close();
   });
 
-  // 사진 주변의 빈 영역을 클릭하면 닫기
-  viewer.addEventListener("click", (event) => {
-    if (
-      event.target === viewer ||
-      event.target.classList.contains("viewer-stage")
-    ) {
-      viewer.close();
-    }
-  });
-
   // Esc로 닫을 때도 스크롤과 포커스를 복원
   viewer.addEventListener("close", () => {
     document.body.classList.remove("gallery-open");
-    activeCard?.focus({ preventScroll: true });
+    const card = activeCard;
+    if (!card) return;
+
+    card.classList.add("album-card--viewer-return");
+    card.addEventListener("blur", () => {
+      card.classList.remove("album-card--viewer-return");
+    }, { once: true });
+    card.focus({ preventScroll: true });
   });
 
   // 키보드 방향키로 사진 넘기기

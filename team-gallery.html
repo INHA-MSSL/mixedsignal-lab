@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Team Gallery | AMSIC Lab.</title>
   <!-- styles.css는 모든 페이지의 디자인, menu.js는 드롭다운 닫기 동작을 담당합니다. -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=gallery-hover-shadow">
   <script src="menu.js" defer></script>
-  <script src="gallery.js" defer></script>
+  <script src="gallery.js?v=gallery-close-controls" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -70,119 +70,128 @@
         <a href="chip-gallery.html">Chip Gallery</a>
       </nav>
   
-      <!-- ========== 2026년 ========== -->
       <section class="gallery-year" aria-labelledby="year-2026">
         <h2 id="year-2026">2026</h2>
-  
+
         <div class="gallery-grid">
-  
-          <!-- 앨범 1 -->
-          <!-- data-images: 이 앨범에서 넘겨볼 사진 목록 -->
+          <!-- data-images에 앨범 사진을 순서대로 넣고 첫 장을 대표 사진으로 연결합니다. -->
           <button
             class="album-card"
             type="button"
             aria-haspopup="dialog"
-            data-title="ISOCC 2026"
-            data-images='["2026-isocc-1.jpg", "2026-isocc-2.jpg", "2026-isocc-3.jpg"]'
+            data-title="Lab Dinner"
+            data-images='["team_gallery_photo/2026_11_12.jpg"]'
           >
-            <!-- src: 카드 밖에서 보이는 대표 사진 -->
-            <img
-              class="album-cover"
-              src="2026-isocc-1.jpg"
-              alt="ISOCC 2026 group photo"
-              loading="lazy"
-            >
-  
+            <span class="album-cover-frame">
+              <img class="album-cover" src="team_gallery_photo/2026_11_12.jpg" alt="" loading="lazy">
+            </span>
             <span class="album-info">
-              <time class="album-date" datetime="2026-10-13">
-                2026.10.13
-              </time>
-              <span class="album-title">ISOCC 2026</span>
+              <time class="album-date" datetime="2026-11-12">2026.11.12</time>
+              <span class="album-title">Lab Dinner</span>
             </span>
           </button>
-  
-          <!-- 앨범 2 -->
+
           <button
             class="album-card"
             type="button"
             aria-haspopup="dialog"
-            data-title="Teachers' Day"
-            data-images='["2026-teachers-1.jpg", "2026-teachers-2.jpg"]'
+            data-title="APCCAS 2026 · Fukuoka"
+            data-images='["team_gallery_photo/2026_10_28_1.jpg", "team_gallery_photo/2026_10_28_2.jpg", "team_gallery_photo/2026_10_28_3.jpg"]'
           >
-            <img
-              class="album-cover"
-              src="2026-teachers-1.jpg"
-              alt="Teachers' Day gathering"
-              loading="lazy"
-            >
-  
+            <span class="album-cover-frame">
+              <img class="album-cover" src="team_gallery_photo/2026_10_28_1.jpg" alt="" loading="lazy">
+            </span>
             <span class="album-info">
-              <time class="album-date" datetime="2026-05-15">
-                2026.05.15
-              </time>
-              <span class="album-title">Teachers' Day</span>
+              <time class="album-date" datetime="2026-10-28">2026.10.28</time>
+              <span class="album-title">APCCAS 2026 · Fukuoka</span>
             </span>
           </button>
-  
-          <!-- 앨범 3 -->
+
           <button
             class="album-card"
             type="button"
             aria-haspopup="dialog"
-            data-title="Spring Outing"
-            data-images='["2026-spring-1.jpg", "2026-spring-2.jpg"]'
+            data-title="ISOCC 2026 · Songdo"
+            data-images='["team_gallery_photo/2026_10_13.jpg"]'
           >
-            <img
-              class="album-cover"
-              src="2026-spring-1.jpg"
-              alt="Lab spring outing"
-              loading="lazy"
-            >
-  
+            <span class="album-cover-frame">
+              <img class="album-cover album-cover--isocc" src="team_gallery_photo/2026_10_13.jpg" alt="" loading="lazy">
+            </span>
             <span class="album-info">
-              <time class="album-date" datetime="2026-04-17">
-                2026.04.17
-              </time>
-              <span class="album-title">Spring Outing</span>
+              <time class="album-date" datetime="2026-10-13">2026.10.13</time>
+              <span class="album-title">ISOCC 2026 · Songdo</span>
             </span>
           </button>
-  
-          <!-- 같은 연도의 앨범은 button 한 묶음을 복사해 여기에 추가 -->
-  
+
+          <button
+            class="album-card"
+            type="button"
+            aria-haspopup="dialog"
+            data-title="Teachers’ Day"
+            data-images='["team_gallery_photo/2026_05_15_1.jpg", "team_gallery_photo/2026_05_15_2.jpg"]'
+          >
+            <span class="album-cover-frame">
+              <img class="album-cover" src="team_gallery_photo/2026_05_15_1.jpg" alt="" loading="lazy">
+            </span>
+            <span class="album-info">
+              <time class="album-date" datetime="2026-05-15">2026.05.15</time>
+              <span class="album-title">Teachers’ Day</span>
+            </span>
+          </button>
+
+          <button
+            class="album-card"
+            type="button"
+            aria-haspopup="dialog"
+            data-title="Spring Cherry Blossoms"
+            data-images='["team_gallery_photo/2026_04_17_1.jpg", "team_gallery_photo/2026_04_17_2.jpg"]'
+          >
+            <span class="album-cover-frame">
+              <img class="album-cover" src="team_gallery_photo/2026_04_17_1.jpg" alt="" loading="lazy">
+            </span>
+            <span class="album-info">
+              <time class="album-date" datetime="2026-04-17">2026.04.17</time>
+              <span class="album-title">Spring Cherry Blossoms</span>
+            </span>
+          </button>
+
+          <button
+            class="album-card"
+            type="button"
+            aria-haspopup="dialog"
+            data-title="Lab Dinner"
+            data-images='["team_gallery_photo/2026_01_30.jpg"]'
+          >
+            <span class="album-cover-frame">
+              <img class="album-cover" src="team_gallery_photo/2026_01_30.jpg" alt="" loading="lazy">
+            </span>
+            <span class="album-info">
+              <time class="album-date" datetime="2026-01-30">2026.01.30</time>
+              <span class="album-title">Lab Dinner</span>
+            </span>
+          </button>
         </div>
       </section>
-  
-      <!-- ========== 2025년 ========== -->
+
       <section class="gallery-year" aria-labelledby="year-2025">
         <h2 id="year-2025">2025</h2>
-  
+
         <div class="gallery-grid">
-  
-          <!-- 사진이 한 장인 앨범도 가능합니다. -->
           <button
             class="album-card"
             type="button"
             aria-haspopup="dialog"
-            data-title="Lab Workshop"
-            data-images='["2025-workshop-1.jpg"]'
+            data-title="Teachers’ Day"
+            data-images='["team_gallery_photo/2025_05_15_1.jpg", "team_gallery_photo/2025_05_15_2.jpg"]'
           >
-            <img
-              class="album-cover"
-              src="2025-workshop-1.jpg"
-              alt="Lab workshop"
-              loading="lazy"
-            >
-  
+            <span class="album-cover-frame">
+              <img class="album-cover" src="team_gallery_photo/2025_05_15_1.jpg" alt="" loading="lazy">
+            </span>
             <span class="album-info">
-              <time class="album-date" datetime="2025-11-21">
-                2025.11.21
-              </time>
-              <span class="album-title">Lab Workshop</span>
+              <time class="album-date" datetime="2025-05-15">2025.05.15</time>
+              <span class="album-title">Teachers’ Day</span>
             </span>
           </button>
-  
-          <!-- 2025년의 다른 앨범을 여기에 추가 -->
-  
         </div>
       </section>
   

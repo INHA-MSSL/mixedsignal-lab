@@ -133,7 +133,7 @@ body { overflow-anchor: none; }
 /* ===== 교수님 페이지 ===== */
 
 /* 본문 너비와 상하 여백 */
-.professor-content { max-width: 1040px; padding-block: 40px 64px; }
+.professor-content { padding-block: 40px 64px; }
 
 /* 사진 왼쪽, 기본 정보 오른쪽 */
 .professor-profile { display: grid; grid-template-columns: 220px minmax(0, 1fr); align-items: center; gap: 48px; padding-block: 12px 48px; }

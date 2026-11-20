@@ -55,22 +55,197 @@
   </header>
 
   <main id="main">
+    <!-- 상단 네이비 배너 -->
     <div class="banner">
       <h1 class="container">Professor</h1>
     </div>
-    <div class="container reading page-content">
-      <!-- 본문 상단의 하위 페이지 버튼. aria-current="page"는 지금 보고 있는 페이지를 표시합니다. -->
+  
+    <div class="container professor-content">
+  
+      <!-- Members 하위 페이지 버튼 -->
       <nav class="subnav" aria-label="Members pages">
         <a href="professor.html" aria-current="page">Professor</a>
         <a href="students.html">Students</a>
         <a href="alumni.html">Alumni</a>
       </nav>
-      <article class="entry">
-        <h2>Inho Park</h2>
-        <p>Inha University</p>
-        <p><a href="mailto:ihpark@inha.ac.kr">ihpark@inha.ac.kr</a></p>
-        <!-- 이곳에 교수님 사진, 약력, 연구 관심 분야를 추가하세요. -->
-      </article>
+  
+      <!-- 교수님 사진과 기본 정보 -->
+      <section class="professor-profile" aria-labelledby="professor-name">
+  
+        <!-- 업로드한 사진의 이름과 확장자를 맞춰주세요. -->
+        <img class="professor-photo"
+             src="교수님.png"
+             alt="Professor Inho Park">
+  
+        <div class="professor-info">
+          <h2 id="professor-name">Inho Park, Ph.D.</h2>
+  
+          <p class="professor-position">Assistant Professor</p>
+  
+          <p>
+            Department of Electronic Engineering<br>
+            Inha University
+          </p>
+  
+          <dl class="professor-contact">
+            <div>
+              <dt>Email</dt>
+              <dd>
+                <a href="mailto:ihpark@inha.ac.kr">
+                  ihpark@inha.ac.kr
+                </a>
+              </dd>
+            </div>
+  
+            <div>
+              <dt>Tel</dt>
+              <dd>
+                <a href="tel:+82328607419">
+                  +82-32-860-7419
+                </a>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+  
+      <!-- 학력 -->
+      <section class="professor-section"
+               aria-labelledby="education-title">
+  
+        <h2 id="education-title">Education</h2>
+  
+        <div class="professor-entries">
+          <div class="professor-record">
+            <p class="record-date">2016.03 ~ 2023.02</p>
+  
+            <div class="record-detail">
+              <h3>Combined M.S. and Ph.D. in Electrical Engineering</h3>
+              <p>Korea University · Seoul, Korea</p>
+              <p class="record-note">Advisor: Prof. Chulwoo Kim</p>
+            </div>
+          </div>
+  
+          <div class="professor-record">
+            <p class="record-date">2010.03 ~ 2016.02</p>
+  
+            <div class="record-detail">
+              <h3>B.S. in Electrical Engineering</h3>
+              <p>Korea University · Seoul, Korea</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- 경력 -->
+      <section class="professor-section"
+               aria-labelledby="experience-title">
+  
+        <h2 id="experience-title">Professional Experience</h2>
+  
+        <div class="professor-entries">
+          <div class="professor-record">
+            <p class="record-date">2023.09 ~ Present</p>
+  
+            <div class="record-detail">
+              <h3>Assistant Professor</h3>
+              <p>Inha University · Incheon, Korea</p>
+            </div>
+          </div>
+  
+          <div class="professor-record">
+            <p class="record-date">2023.03 ~ 2023.07</p>
+  
+            <div class="record-detail">
+              <h3>Staff Engineer</h3>
+              <p>Samsung Electronics · Hwaseong, Korea</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- 수상 내역. 항목을 추가할 때 li 하나를 복사하세요. -->
+      <section class="professor-section"
+               aria-labelledby="awards-title">
+  
+        <h2 id="awards-title">Awards &amp; Honors</h2>
+  
+        <ul class="professor-awards">
+          <li>
+            <span class="record-date">2023.02</span>
+            <span>2022 KU Achievement Award, Korea University</span>
+          </li>
+  
+          <li>
+            <span class="record-date">2022.12</span>
+            <span>
+              14th Electronic Newspaper ICT Thesis Contest (Presidential Award of Korean Electronic Engineering Association)
+            </span>
+          </li>
+  
+          <li>
+            <span class="record-date">2022.02</span>
+            <span>BK21 Korea University Future Talent Fellowship Program</span>
+          </li>
+  
+          <li>
+            <span class="record-date">2022.01</span>
+            <span>
+              2021-2022 IEEE Solid-State Circuits Society (SSCS) Predoctoral Achievement Award
+            </span>
+          </li>
+  
+          <li>
+            <span class="record-date">2021.06</span>
+            <span>2021 IC Design Education Center (IDEC) Best Design Award</span>
+          </li>
+  
+          <li>
+            <span class="record-date">2020.10</span>
+            <span>
+              2020 International SoC Design Conference (ISOCC) Chip Design Contest (Best Poster Award)
+            </span>
+          </li>
+  
+          <li>
+            <span class="record-date">2019.02</span>
+            <span>
+              25th Samsung Humantech Paper Award (Honorable Mention Award)
+            </span>
+          </li>
+  
+          <li>
+            <span class="record-date">2018.10</span>
+            <span>
+              19th Korea Semiconductor Design Contest (Corporate Special Award)
+            </span>
+          </li>
+  
+          <li>
+            <span class="record-date">2017.06</span>
+            <span>Qualcomm Innovation Research Grant 2017</span>
+          </li>
+  
+          <li>
+            <span class="record-date">2016.06</span>
+            <span>Qualcomm Innovation Research Grant 2016</span>
+          </li>
+  
+          <li>
+            <span class="record-date">2014.03 ~ 2016.02</span>
+            <span>National Science and Engineering Scholarship from Korea Science Foundation</span>
+          </li>
+  
+          <li>
+            <span class="record-date">
+              2010.09 ~ 2011.08<br>
+              2013.09 ~ 2014.02
+            </span>
+            <span>Academic Scholarship for Excellent GPA from Korea University</span>
+          </li>
+        </ul>
+      </section>
+  
     </div>
   </main>
 

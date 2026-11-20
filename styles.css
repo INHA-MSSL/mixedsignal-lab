@@ -255,3 +255,17 @@ body { overflow-anchor: none; }
 /* 마우스를 올리거나 키보드로 선택하면 밑줄 표시 */
 .news a:hover, .news a:focus-visible,
 .contact-panel a:hover, .contact-panel a:focus-visible { text-decoration: underline; text-underline-offset: 4px; }
+
+/* Alumni: Professor·Students와 본문 너비 및 버튼 위쪽 여백 통일 */
+.alumni-content { padding-block: 40px 72px; }
+
+/* 졸업생 안내 영역 */
+.alumni-notice { padding: 40px 32px; border: 1px solid var(--line); border-radius: 8px; background: var(--tint); }
+.alumni-notice h2 { margin-bottom: 14px; font-size: 1.5rem; }
+.alumni-notice p { color: var(--muted); line-height: 1.8; }
+
+/* 모바일 여백 */
+@media (max-width: 480px) {
+  .alumni-notice { padding: 28px 22px; }
+}
+

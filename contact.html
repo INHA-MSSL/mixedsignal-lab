@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact | AMSIC Lab.</title>
   <!-- styles.css는 모든 페이지의 디자인, menu.js는 드롭다운 닫기 동작을 담당합니다. -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=contact-equal-spacing">
   <script src="menu.js" defer></script>
 </head>
 <body>
@@ -59,27 +59,21 @@
     <div class="banner">
       <h1 class="container">Contact</h1>
     </div>
-    <div class="container reading page-content">
-      <section class="entry" aria-labelledby="inquiries-title">
-        <h2 id="inquiries-title">Get in touch</h2>
-        <p>Interested in joining us as an undergraduate researcher, M.S. student, or Ph.D. student? Please get in touch.</p>
-        <!-- 이메일을 바꿀 때 href의 mailto: 뒤 주소와 화면에 표시되는 주소를 함께 수정하세요. -->
-        <p><a href="mailto:ihpark@inha.ac.kr">ihpark@inha.ac.kr</a></p>
+    <div class="container reading page-content contact-page-content">
+      <iframe class="contact-page-map"
+              title="Google Maps location of Inha University Hi-Tech Center"
+              src="https://maps.google.com/maps?q=%EC%9D%B8%ED%95%98%EB%8C%80%ED%95%99%EA%B5%90%20%ED%95%98%EC%9D%B4%ED%85%8C%ED%81%AC%EC%84%BC%ED%84%B0%2C%20%EC%9D%B8%EC%B2%9C%EA%B4%91%EC%97%AD%EC%8B%9C%20%EB%AF%B8%EC%B6%94%ED%99%80%EA%B5%AC%20%EC%9D%B8%ED%95%98%EB%A1%9C%20100&amp;z=17&amp;output=embed"
+              loading="lazy"
+              allowfullscreen></iframe>
+      <section class="entry" aria-labelledby="office-title">
+        <h2 id="office-title">Office</h2>
+        <p><strong>Address</strong> Room #805, Hi-Tech Center, 100 Inha-Ro, Michuhol-Gu, Incheon, 22212, South Korea</p>
+        <p><strong>Tel.</strong> <a href="tel:+82328607419">+82-32-860-7419</a></p>
+        <p><strong>E-mail</strong> <a href="mailto:ihpark@inha.ac.kr">ihpark@inha.ac.kr</a></p>
       </section>
-      <section class="entry" aria-labelledby="location-title">
-        <h2 id="location-title">Location</h2>
-        <p>Advanced Mixed-Signal Integrated Circuit Lab.</p>
-        <p>Inha University</p>
-        <!-- 아래 안내 문장을 실제 건물명, 호실, 우편주소로 바꾸세요. -->
-        <p>Building, room number, and mailing address will appear here.</p>
-      </section>
-      <section class="entry" aria-labelledby="directions-title">
-        <h2 id="directions-title">Directions</h2>
-        <!-- 실제 지도 링크를 넣을 때 아래 p 문장을 지우고 a 태그의 주석을 푸세요.
-        href에는 네이버 지도 또는 카카오맵에서 복사한 실제 연구실 위치 링크를 넣으세요.
-        <p><a href="실제-지도-공유-주소" target="_blank" rel="noopener noreferrer">Open map</a></p>
-        -->
-        <p>A map link and directions to the lab will appear here.</p>
+      <section class="entry" aria-labelledby="lab-title">
+        <h2 id="lab-title">Laboratory</h2>
+        <p><strong>Address</strong> Room #713, Hi-Tech Center, 100 Inha-Ro, Michuhol-Gu, Incheon, 22212, South Korea</p>
       </section>
     </div>
   </main>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Journal | AMSIC Lab.</title>
+  <!-- styles.css는 모든 페이지의 디자인, menu.js는 드롭다운 닫기 동작을 담당합니다. -->
+  <link rel="stylesheet" href="styles.css?v=publication-links">
+  <script src="menu.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- 공통 상단 메뉴. 메뉴를 바꿀 때는 각 HTML의 이 부분을 함께 수정하세요. -->
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">AMSIC Lab.</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="research.html" class="nav-link">Research</a>
+          <!-- 메뉴 이름의 href는 기본 페이지, details 안의 링크는 화살표를 눌렀을 때 나오는 목록입니다. -->
+          <div class="nav-group">
+            <a href="professor.html" class="nav-link">Members</a>
+            <details>
+              <summary aria-label="Members submenu"></summary>
+              <div class="dropdown">
+              <a href="professor.html">Professor</a>
+              <a href="students.html">Students</a>
+              <a href="alumni.html">Alumni</a>
+              </div>
+            </details>
+          </div>
+          <div class="nav-group">
+            <a href="journal.html" class="nav-link is-active">Publications</a>
+            <details>
+              <summary aria-label="Publications submenu"></summary>
+              <div class="dropdown">
+              <a href="journal.html" aria-current="page">Journal</a>
+              <a href="conference.html">Conference</a>
+              <a href="patents.html">Patents</a>
+              </div>
+            </details>
+          </div>
+          <div class="nav-group">
+            <a href="team-gallery.html" class="nav-link">Gallery</a>
+            <details>
+              <summary aria-label="Gallery submenu"></summary>
+              <div class="dropdown">
+              <a href="team-gallery.html">Team Gallery</a>
+              <a href="chip-gallery.html">Chip Gallery</a>
+              </div>
+            </details>
+          </div>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="banner">
+      <h1 class="container">Journal</h1>
+    </div>
+    <div class="container publication-content">
+      <!-- 본문 상단의 하위 페이지 버튼. aria-current="page"는 지금 보고 있는 페이지를 표시합니다. -->
+      <nav class="subnav" aria-label="Publications pages">
+        <a href="journal.html" aria-current="page">Journal</a>
+        <a href="conference.html">Conference</a>
+        <a href="patents.html">Patents</a>
+      </nav>
+      <div class="publication-list" aria-label="Journal publications">
+        <h2 class="paper-year">2026</h2>
+        <ul class="paper-list">
+          <li><a class="paper-link" href="https://ieeexplore.ieee.org/document/11782431"><strong>G. Kim</strong>, S. Moon, J. Chae, J. Hwang, J. Kim, and <strong>I. Park</strong>, &quot;A Dual-Loop Hybrid LDO with Inverter-Based Amplifier and PWM Control for Low-Voltage Operation,&quot; <em>IEEE Transactions on Circuits and Systems-II (TCAS-II).</em></a></li>
+          <li><a class="paper-link" href="https://ieeexplore.ieee.org/document/11662140">T. Park, H. Kim, M. Jeong, S. Seo, <strong>I. Park</strong>,C. Kim, &quot;A Fully Integrated Electromagnetically Coupled Recursive Resonant Switched-Capacitor DC-DC Converter Using a Tri-Coupled Inductor,&quot; <em>IEEE Transactions on Power Electronics (TPE).</em></a></li>
+          <li><a class="paper-link" href="https://www.mdpi.com/2079-9292/15/6/1304"><strong>S. Moon</strong>, J. Chae, G. Kim, J. Hwang, J. Kim, and <strong>I. Park</strong>, &quot;A Dual-Phase Dual-Path Hybrid Buck-Boost Converter with Offset-Controlled Zero-Current Detection Achieving 95.88% Peak Efficiency,&quot; <em>Electronics</em>, vol. 15, no. 6, pp. 1-24.</a></li>
+          <li><a class="paper-link" href="https://www.mdpi.com/2079-9292/15/6/1190"><strong>J. Chae</strong>, S. Moon, J. Hwang, G. Kim, J. Kim, and <strong>I. Park</strong>, &quot;A Single-Inductor Multi-Output (SIMO) Hybrid Buck Converter with Load-Dependent Sequencing Technique for Wide Output Voltage Range,&quot; <em>Electronics</em>, vol. 15, no. 6, pp. 1-20.</a></li>
+        </ul>
+        <h2 class="paper-year">2025</h2>
+        <ul class="paper-list">
+          <li><a class="paper-link" href="https://doi.org/10.1109/tpel.2024.3464328">H. Kim, T. Park, S. Kim, S. Han, M. Jeong, J. Kim, <strong>I. Park</strong>, and C. Kim, &quot;An Asynchronous Geometric Sequence Array-Based Binary Search Digital Low-Dropout Regulator for O(log n)-Complexity Searching Operations,&quot; <em>IEEE Transactions on Power Electronics (TPE), </em>vol. 40, no. 1, pp. 1431-1440.</a></li>
+        </ul>
+        <h2 class="paper-year">2024</h2>
+        <ul class="paper-list">
+          <li><a class="paper-link" href="https://doi.org/10.1109/tcsii.2024.3437449">J. Meang†, <strong>I. Park</strong><strong>†</strong>, J. Jeon, H. Kim, H. Lee, and C. Kim, &quot;A Tri-Mode Reconfigurable DC−DC Converter with Photovoltaic Energy Harvesting for Miniature IoT Batteries,&quot; <em>IEEE Transactions on Circuits and Systems II (TCAS-II),</em> vol 71, no. 12, pp. 4844-4848. (<strong>†</strong><strong>contributed equally </strong>)</a></li>
+          <li><a class="paper-link" href="https://doi.org/10.1109/jssc.2024.3404597">H. Kim, T. Park, <strong>I. Park</strong>, C. Park, S. Kim, S. Han, J. Jeong, and C. Kim, &quot;A Fully Integrated 9-Ratio Switched-Capacitor Converter with Overlapped-Conversion-Ratio Modulation for IoT Applications,&quot; <em>IEEE Journal of Solid-State Circuits (JSSC),</em> vol. 59, no. 10, pp. 3444-3456<em>.</em></a></li>
+          <li><a class="paper-link" href="https://doi.org/10.1109/tcsi.2024.3396702">T. Park, H. Kim, M. Jeong, <strong>I. Park</strong>, and C. Kim, &quot;A Fully Integrated Dual-Output Continuously Scalable-Conversion-Ratio SC Converter for Battery-Powered IoT Applications,&quot; <em>IEEE Transactions on Circuits and Systems I (TCAS-1),</em> vol. 71, no. 8, pp. 3463-3475.</a></li>
+          <li><a class="paper-link" href="https://doi.org/10.1109/tie.2023.3288183">J. Maeng, J. Jeong, <strong>I. Park</strong>, M. Shim, and C. Kim, &quot;A Time-Based Direct MPPT Technique for Low-Power Photovoltaic Energy Harvesting,&quot; <em>IEEE Transactions on Industrial Electronics (TIE)</em>, vol. 71, no. 5, pp. 5375-5380, May 2024.</a></li>
+          <li><a class="paper-link" href="https://doi.org/10.1109/jssc.2023.3297605">H. Kim, C. Park, <strong>I. Park</strong>, T. Park, S. Park, and C. Kim, &quot;A Four-Phase Time-Based Switched-Capacitor LDO With 13-ns Settling Time at 0.5-V Input for Energy-Efficient Computing in SoC Applications,&quot; <em>IEEE Journal of Solid-State Circuits (JSSC)</em>, vol. 59, no. 2, pp.551-562, Feb. 2024.</a></li>
+        </ul>
+        <h2 class="paper-year">2023</h2>
+        <ul class="paper-list">
+          <li><a class="paper-link" href="https://doi.org/10.1109/tpel.2023.3292276"><strong>I. Park</strong>, H. Kim, T. Park, J. Jeong and C. Kim, &quot;An Automotive 12 V-to-1.2 V Integrated Switched-Capacitor DC–DC Converter for Improved Load Transient Response,&quot; <em>IEEE Transactions on Power Electronics (TPE)</em>, vol. 38, no. 10, pp. 12315-12319, Oct. 2023.</a></li>
+          <li><a class="paper-link" href="https://doi.org/10.1109/jssc.2022.3214839"><strong>I. Park</strong>, J. Jeon, H. Kim, T. Park, J. Jeong and C. Kim, &quot;A Thermoelectric Energy-Harvesting Interface with Dual-Conversion Reconfigurable DC–DC Converter and Instantaneous Linear Extrapolation MPPT Method,&quot; <em>IEEE Journal of Solid-State Circuits (JSSC)</em>, vol. 58, no. 6, pp. 1706-1718, Jun. 2023.</a></li>
+        </ul>
+        <h2 class="paper-year">2022</h2>
+        <ul class="paper-list">
+          <li><a class="paper-link" href="https://doi.org/10.1109/tpel.2021.3120988"><strong>I. Park</strong>, J. Maeng, J. Jeon, H. Kim, and C. Kim, “A Four-Phase Hybrid Step-Up/-Down DC–DC Converter with RMS Inductor Current Reduction and Delay-Based Zero-Current Detection,” <em>IEEE Transactions on Power Electronics (TPE)</em>, vol. 37, no. 4, pp. 3708-3712, Apr. 2022.</a></li>
+        </ul>
+        <h2 class="paper-year">2021</h2>
+        <ul class="paper-list">
+          <li><a class="paper-link" href="https://doi.org/10.1109/jssc.2020.3048481">H. Kim, J. Maeng, <strong>I. Park</strong>, J. Jeon, Y. Choi, and C. Kim, “A Dual-Mode Continuously Scalable-Conversion-Ratio SC Energy Harvesting Interface with SC-Based PFM MPPT and Flying Capacitor Sharing Scheme,” <em>IEEE Journal of Solid-State Circuits (JSSC)</em>, vol. 56, no. 9, pp. 2724-2735, Sep. 2021.</a></li>
+          <li><a class="paper-link" href="https://doi.org/10.1109/jssc.2020.3025722">H. Kim, J. Maeng, <strong>I. Park</strong>, J. Jeon, D. Lim, and C. Kim, “A 90.2% Peak Efficiency Multi-Input Single-Inductor Multi-Output Energy Harvesting Interface with Double-Conversion Rejection Technique and Buck-Based Dual-Conversion Mode,” <em>IEEE Journal of Solid-State Circuits (JSSC)</em>, vol. 56, no. 3, pp. 961-971, Mar. 2021.</a></li>
+          <li><a class="paper-link" href="https://doi.org/10.1109/tpel.2020.3006615">J. Maeng, M. Shim, J. Jeong, <strong>I. Park</strong>, and C. Kim, “A Periodically Refreshed Capacitive Floating Level Shifter for Conditional Switching Applications,” <em>IEEE Transactions on Power Electronics (TPE)</em>, vol. 36, no. 2, pp. 1264-1268, Feb. 2021.</a></li>
+        </ul>
+        <h2 class="paper-year">2020</h2>
+        <ul class="paper-list">
+          <li><a class="paper-link" href="https://doi.org/10.1109/jssc.2020.3012991">J. Maeng, <strong>I. Park</strong>, M. Shim, J. Jeong, and C. Kim, “A High-Voltage Dual-Input Buck Converter with Bidirectional Inductor Current for Triboelectric Energy-Harvesting Applications,” <em>IEEE Journal of Solid-State Circuits (JSSC)</em>, vol. 56, no. 2, pp. 541-553, Aug. 2020.</a></li>
+          <li><a class="paper-link" href="https://doi.org/10.1109/jssc.2019.2952132">J. Maeng, M. Shim, J. Jeong, <strong>I. Park</strong>, Y. Park, and C. Kim, “A sub-fs-FoM Digital LDO Using PMOS and NMOS Arrays with Fully Integrated 7.2-pF Total Capacitance,” <em>IEEE Journal of Solid-State Circuits (JSSC)</em>, vol. 55, no. 6, pp. 1624-1636, Jun. 2020</a></li>
+          <li><a class="paper-link" href="https://doi.org/10.1109/jssc.2019.2942370"><strong>I. Park</strong>, J. Maeng, M. Shim, J. Jeong, and C. Kim, &quot;A High-Voltage Dual-Input Buck Converter Achieving 52.9% Maximum End-to-End Efficiency for Triboelectric Energy Harvesting,&quot; <em>IEEE Journal of Solid-State Circuits (JSSC)</em>, vol. 55, no. 5, pp. 1324-1336, May 2020.</a></li>
+          <li><a class="paper-link" href="https://doi.org/10.1109/tpel.2019.2939170">J. Jeong, M. Shim, J. Maeng, <strong>I. Park</strong>, and C. Kim, “An Efficiency-Aware Cooperative Multicharger System for Photovoltaic Energy Harvesting Achieving 14% Efficiency Improvement,” <em>IEEE Transactions on Power Electronics (TPE)</em>, vol. 35, no. 3, pp.2253–2256, Mar. 2020.</a></li>
+          <li><a class="paper-link" href="https://doi.org/10.1109/tpel.2019.2912030">J. Jeong, M. Shim, J. Maeng, <strong>I. Park</strong>, and C. Kim, “A High-Efficiency Charger with Adaptive Input Ripple MPPT for Low-Power Thermoelectric Energy Harvesting Achieving 21% Efficiency Improvement,” <em>IEEE Transactions on Power Electronocs (TPE)</em>, vol. 35, no. 1, pp.347–358, Jan. 2020.</a></li>
+        </ul>
+        <h2 class="paper-year">2019</h2>
+        <ul class="paper-list">
+          <li><a class="paper-link" href="https://doi.org/10.1109/tpel.2018.2863390">M. Shim, J. Jeong, J. Maeng, <strong>I. Park</strong>, and C. Kim, “A Fully Integrated Low-Power Energy Harvesting System with Simplified Ripple Correlation Control,” <em>IEEE Transactions on Power Electronincs (TPE)</em>, vol. 34, no. 5, pp.4353–4361, May 2019.</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">Advanced Mixed-Signal Integrated Circuit Lab. · Inha University</div>
+  </footer>
+</body>
+</html>

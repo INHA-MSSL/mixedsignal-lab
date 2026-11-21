@@ -88,6 +88,15 @@ h3 { font-size: 1.125rem; }
 .topic p, .copy { margin-top: 9px; color: var(--muted); }
 .contact-panel { padding: clamp(23px, 5vw, 46px); border-radius: 8px; background: var(--tint); }
 .contact-panel p { margin: 10px 0; }
+.home-contact-details { display: grid; grid-template-columns: fit-content(56%) minmax(0, 1fr); align-items: start; gap: 12px clamp(18px, 3vw, 32px); }
+.home-contact-details h2 { margin-bottom: 18px; }
+.home-contact-details address { margin-top: 8px; font-style: normal; }
+.home-contact-map { grid-column: 2; grid-row: 1 / span 2; display: block; width: 100%; height: 100%; min-height: 230px; border: 0; box-shadow: none; }
+.home-contact-directions { align-self: end; justify-self: start; }
+@media (max-width: 560px) {
+  .home-contact-details { grid-template-columns: minmax(0, 1fr); }
+  .home-contact-map { grid-column: 1; grid-row: auto; height: 230px; }
+}
 
 /* 하위 페이지 본문. subnav는 본문 상단의 페이지 이동 버튼입니다. */
 .page-content { padding-block: clamp(34px, 6vw, 68px); }
@@ -100,6 +109,17 @@ h3 { font-size: 1.125rem; }
 .entry { padding-block: 25px; border-top: 1px solid var(--line); }
 .entry h2 { font-size: clamp(1.28rem, 2.5vw, 1.65rem); }
 .entry p { margin-top: 9px; color: var(--muted); }
+.publication-list { color: var(--navy); }
+.paper-year { margin-top: 24px; font-size: 1.125rem; letter-spacing: normal; }
+.patent-list .paper-year { font-size: 22px; font-weight: 700; }
+.patent-category { margin-top: 16px; font-size: 1rem; font-weight: 600; }
+.paper-list { margin: 8px 0 0; padding-left: 1.25rem; }
+.patent-list .paper-list { margin-top: 16px; }
+.paper-list li + li { margin-top: 14px; }
+.paper-list strong { text-decoration: underline; text-underline-offset: 3px; }
+.paper-list .paper-link { color: inherit; text-decoration: none; }
+.paper-list .paper-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+.patent-list .paper-list li + li { margin-top: 8px; }
 .research-list { margin-top: 30px; }
 .media-slot { margin: 16px 0 0; padding: 0; border: none; background: transparent; }
 .media-slot img { display: block; width: 100%; height: auto; }
@@ -251,15 +271,15 @@ body { overflow-anchor: none; }
 .students-content .student-details dd.student-course { color: var(--navy); font-weight: 700; }
 
 
-/* 뉴스와 Contact 이메일만 평소 밑줄 숨김 */
-.news a, .contact-panel a[href^="mailto:"] { text-decoration: none; }
+/* 뉴스와 Contact의 이메일·전화번호는 평소 밑줄 숨김 */
+.news a, .contact-panel a:is([href^="mailto:"], [href^="tel:"]) { text-decoration: none; }
 
 /* 마우스 또는 키보드로 선택하면 밑줄 표시 */
 .news a:hover, .news a:focus-visible,
-.contact-panel a[href^="mailto:"]:hover, .contact-panel a[href^="mailto:"]:focus-visible { text-decoration: underline; }
+.contact-panel a:is([href^="mailto:"], [href^="tel:"]):is(:hover, :focus-visible) { text-decoration: underline; }
 
 /* 페이지 이동 화살표 링크는 항상 밑줄 표시 */
-.section-heading a, .contact-panel a:not([href^="mailto:"]) { text-decoration: underline; }
+.section-heading a, .home-contact-directions { text-decoration: underline; }
 
 
 /* Alumni: Professor·Students와 본문 너비 및 버튼 위쪽 여백 통일 */
@@ -278,7 +298,7 @@ body { overflow-anchor: none; }
 /* ===== Gallery 페이지 ===== */
 
 /* Members와 같은 본문 너비 및 버튼 위쪽 여백 */
-.gallery-content { padding-block: 40px 72px; }
+.gallery-content, .publication-content { padding-block: 40px 72px; }
 
 /* 연도별 구분 */
 .gallery-year { margin-top: 40px; }
@@ -288,8 +308,10 @@ body { overflow-anchor: none; }
 .gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
 
 /* 앨범 카드: 안쪽 여백, 흰 배경 유지 */
-.album-card { display: flex; flex-direction: column; width: 100%; min-width: 0; padding: 24px; border: 1px solid var(--line); border-radius: 8px; background: var(--white); color: var(--ink); font: inherit; text-align: left; cursor: pointer; appearance: none; }
-.album-card { transition: transform 160ms ease, box-shadow 160ms ease; }
+.album-card, .chip-card { display: flex; flex-direction: column; width: 100%; min-width: 0; padding: 24px; border: 1px solid var(--line); border-radius: 8px; background: var(--white); color: var(--ink); font: inherit; text-align: left; }
+.album-card { cursor: pointer; appearance: none; transition: transform 160ms ease, box-shadow 160ms ease; }
+.chip-gallery-grid { margin-top: 24px; }
+.chip-card { margin: 0; }
 .album-card:hover { box-shadow: 0 6px 18px rgba(16, 52, 90, 0.16); }
 .album-card:focus-visible { outline: none; }
 .album-card:focus-visible:not(.album-card--viewer-return) .album-title { text-decoration: underline; text-underline-offset: 3px; }
@@ -338,7 +360,7 @@ body.gallery-open { overflow: hidden; }
 /* 모바일: 한 줄에 한 개 */
 @media (max-width: 600px) {
   .gallery-grid { grid-template-columns: minmax(0, 1fr); }
-  .album-card { padding: 20px; }
+  .album-card, .chip-card { padding: 20px; }
   .viewer-stage { padding: 64px 12px; }
   .viewer-prev { left: 8px; }
   .viewer-next { right: 8px; }

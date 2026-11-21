@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chip Gallery | AMSIC Lab.</title>
   <!-- styles.css는 모든 페이지의 디자인, menu.js는 드롭다운 닫기 동작을 담당합니다. -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=chip-gallery-labels">
   <script src="menu.js" defer></script>
 </head>
 <body>
@@ -30,11 +30,12 @@
             </details>
           </div>
           <div class="nav-group">
-            <a href="papers.html" class="nav-link">Publications</a>
+            <a href="journal.html" class="nav-link">Publications</a>
             <details>
               <summary aria-label="Publications submenu"></summary>
               <div class="dropdown">
-              <a href="papers.html">Papers</a>
+              <a href="journal.html">Journal</a>
+              <a href="conference.html">Conference</a>
               <a href="patents.html">Patents</a>
               </div>
             </details>
@@ -64,14 +65,25 @@
         <a href="team-gallery.html">Team Gallery</a>
         <a href="chip-gallery.html" aria-current="page">Chip Gallery</a>
       </nav>
-        <figure class="media-slot">
-          <span>Chip die photo</span>
-          <!-- 실제 그림을 넣을 때 위 span을 지우고 아래 두 줄의 주석을 푸세요.
-          <img src="chip-photo.jpg" alt="Die photograph of the fabricated chip" loading="lazy">
-          <figcaption>Photo caption.</figcaption>
-          -->
+      <section class="alumni-notice" aria-label="Work in progress">
+        <p>Two chip projects are in testing or manuscript preparation.</p>
+        <p>Three chips are in fabrication.</p>
+      </section>
+
+      <div class="gallery-grid chip-gallery-grid">
+        <figure class="chip-card">
+          <div class="album-cover-frame">
+            <img class="album-cover" src="chip_gallery_photo/25_SS28_KGM.png" alt="Hybrid LDO chip die" loading="lazy">
+          </div>
+          <figcaption class="album-info">
+            <h2 class="album-title">Hybrid LDO</h2>
+            <p class="album-date"><strong>Process</strong> 28nm</p>
+            <p class="album-date"><strong>Published</strong> IEEE TCAS-II (2026)</p>
+          </figcaption>
         </figure>
+      </div>
     </div>
+
   </main>
 
   <footer>
